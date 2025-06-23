@@ -1,0 +1,12 @@
+variable "aws_region"         { default = "ap-south-1" }
+variable "vpc_cidr"           { default = "10.0.0.0/16" }
+variable "public_subnet_cidr_base"  { default = "10.0.1.0/24" }
+variable "private_subnet_cidr_base" { default = "10.0.10.0/24" }
+variable "azs"                { default = ["ap-south-1a", "ap-south-1b", "ap-south-1c"] }
+variable "ami_id"             { default = "ami-0f5ee92e2d63afc18" }
+variable "instance_type"      { default = "t2.micro" }
+variable "key_pair_name"      { default = "kiran-key" }
+variable "private_key_path"   { default = "~/.ssh/kiran-key.pem" }
+variable "db_name"            { default = "kirandb" }
+variable "db_user"            { default = "admin" }
+variable "db_password"        { default = "Kiran12345@" }
